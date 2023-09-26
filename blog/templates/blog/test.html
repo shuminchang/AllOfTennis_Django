@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/blog/styles.css' %}">
+    <header class="hero" style="background-image: url('{% static "hero-image.jpg" %}')">
+        <h1 style="color: white;">ALL OF TENNIS</h1>
+	<h4 style="color: white;">Exploring Tennis, Inside Out</h3>
+    </header>
+    <section class="section-with-bg section1-bg" style="background-image: url('{% static "section1-image.jpg" %}')">
+	<div class="overlay"></div>
+	<div class="content">
+	<div class="left-column">
+            <hr>
+            <h4 class="white-text">Win-Loss Predictor</h4>
+            <p class="white-text">Provide a user-friendly interface for users to predict match outcomes based on historical data. Interactive charts and graphs showcasing player performance and trends.</p>
+            <hr>
+            <h4 class="white-text">Explore Tennis Through Statistics</h4>
+            <!-- Add content related to tennis statistics here -->
+            <hr>
+            <h4 class="white-text">Fun Facts About Tennis</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+	    </div>
+	<div class="right-column">
+            <h4 class="white-text">other content</h4>
+	</div>
+	</div>
+    </section>
+{% endblock content %}

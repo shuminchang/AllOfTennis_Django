@@ -1,0 +1,46 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust the height as needed */
+    text-align: center;
+    color: #fff; /* Text color on top of the image */
+}
+
+.hero h1 {
+    padding-top: 200px; /* Adjust the padding to vertically center the text */
+    font-size: 36px;
+}
+
+.section-with-bg {
+    background-image: url('{% static "section1-image.jpg" %}');
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center center; /* Center the background image */
+    /* height: 500px; /* Adjust the height as needed */ */
+    color: #fff; /* Text color on top of the image */
+    display: flex;
+    box-shadow: inset 0 0 0 2000px rgba(105, 105, 105, 0.3);
+}
+
+.section-with-bg .content {
+    display: flex; /* Use Flexbox to create a horizontal layout */
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+}
+
+.section-with-bg .left-column {
+    flex: 1; /* Allow left column to grow and take available space */
+    padding-right: 10px; /* Add spacing between left and right columns */
+}
+
+.section-with-bg .right-column {
+    flex: 1; /* Allow right column to grow and take available space */
+    padding-left: 10px; /* Add spacing between left and right columns */
+    /* Add styling for the right column as needed */
+}
+
+.white-text {
+    color: white; /* Set text color to white */
+}
